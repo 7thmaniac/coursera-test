@@ -1,1 +1,14 @@
-ECHO is on.
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+a.navbar-brand{
+	font-size: 2em;
+	text-decoration: none;
+}
+
+h2{
+	margin-top: 10px;
+}
+
