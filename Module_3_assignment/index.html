@@ -6,40 +6,48 @@
 	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="CSS/bootstrap-utilities.css">
 	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 	<title>Assignment Solution for Module 3</title>
 </head>
 <body>
-	<nav class="navbar static-top navbar-dark navbar-expand-lg" style=" background-color: grey; padding:10px;">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="js/script.js"></script>
+	
+	<nav class="navbar navbar-dark static-top navbar-expand-sm">
 		<div class="container-fluid">
-			<a class="navbar-brand " href="Couldn't load image.jpg">Food, LLC</a>
-
-			<button class="navbar-toggler .d-block .d-sm-none" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<a class="navbar-brand " href="">Food, LLC</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            	<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            		<li class="nav-item active">
-            			<a class="nav-link" href="#Chicken">Chicken </a>
+            <div class="collapse navbar-collapse" id="collapsable-nav">
+            	<ul class="navbar-nav  d-block d-sm-none" id="top">
+            		<li class="nav-item">
+            			<div class="grid"><div class="g-col-12 text-center"><a class="nav-link active " href="#Chicken">Chicken</a></div></div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#Beef">Beef</a>
+                    <li class="nav-item">
+                        <div class="grid"><div class="g-col-12 text-center"><a class="nav-link active " href="#Beef">Beef</a></div></div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#Sushi">Sushi</a>
+                    <li class="nav-item">
+                        <div class="grid"><div class="g-col-12 text-center"><a class="nav-link active " href="#Sushi">Sushi</a></div></div>
                     </li>
                 </ul>
-    
             </div>
 		</div>
-		
+				
     </nav>
-
-	<h2 id="top" class="text-center">Our Menu</h2>
+    
+    
+	<h2  class="text-center">Our Menu</h2>
 
     <div class="container-fluid">		
         <div class="row">
-        	<div id="Chicken" class="col-md-4 col-sm-6 col-xs-12">
+        	<div id="Chicken" class="col-md-4 col-sm-6 col-12">
+                <div class="item">
         		<h3 class="text-center">Chicken</h3>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales, ante vel porttitor efficitur, lectus turpis suscipit neque, id lacinia mi ex at nibh. Sed ut iaculis velit. Sed a dignissim est. In in orci et velit ullamcorper congue. Sed justo felis, ultricies eget pulvinar ac, vulputate id sapien. Aliquam sagittis feugiat nibh et auctor. Vestibulum sit amet nisi ultrices, feugiat nunc ac, sollicitudin ligula. Maecenas venenatis massa et risus condimentum tincidunt. Suspendisse eleifend nibh sapien, sit amet tempor ipsum elementum eu. Sed volutpat est facilisis, aliquet ipsum non, eleifend arcu. Mauris mauris nisi, pellentesque eget nibh et, ornare ultricies odio. Sed velit ligula, blandit eu nisi sit amet, venenatis faucibus orci. Mauris tortor est, volutpat sit amet placerat sed, mattis molestie ipsum. Donec dictum consequat tellus, eget fermentum nibh. Sed eget suscipit libero, et mollis diam. Maecenas elementum vestibulum nulla, sit amet hendrerit mi molestie finibus.
 
@@ -52,10 +60,11 @@
                 Donec lectus nulla, faucibus in convallis consectetur, fringilla vitae purus. Nulla ac aliquam est. Aenean mauris felis, feugiat at posuere et, feugiat nec tortor. Vestibulum nec turpis magna. Cras ac arcu mauris. Pellentesque et finibus lorem, at dapibus sapien. Curabitur sit amet ex sapien. In tempus dolor non lacinia vehicula. Donec nec arcu facilisis, consectetur nisl et, placerat orci. Morbi rhoncus neque nibh, id mattis orci fringilla et. Sed fringilla, elit et commodo tincidunt, tortor velit ultrices est, nec condimentum risus ex vitae lacus. Duis porta mi sit amet odio suscipit, sit amet pulvinar felis convallis.</p>
 
                 <p> (End of Chicken section) <a href="#top">Back to top</a></p>
-        		
+        		</div>
         	</div>
 
-        	<div id="Beef" class="col-md-4 col-sm-6 col-xs-12">
+        	<div id="Beef" class="col-md-4 col-sm-6 col-12">
+                <div class="item">
         		<h3 class="text-center">Beef</h3>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales, ante vel porttitor efficitur, lectus turpis suscipit neque, id lacinia mi ex at nibh. Sed ut iaculis velit. Sed a dignissim est. In in orci et velit ullamcorper congue. Sed justo felis, ultricies eget pulvinar ac, vulputate id sapien. Aliquam sagittis feugiat nibh et auctor. Vestibulum sit amet nisi ultrices, feugiat nunc ac, sollicitudin ligula. Maecenas venenatis massa et risus condimentum tincidunt. Suspendisse eleifend nibh sapien, sit amet tempor ipsum elementum eu. Sed volutpat est facilisis, aliquet ipsum non, eleifend arcu. Mauris mauris nisi, pellentesque eget nibh et, ornare ultricies odio. Sed velit ligula, blandit eu nisi sit amet, venenatis faucibus orci. Mauris tortor est, volutpat sit amet placerat sed, mattis molestie ipsum. Donec dictum consequat tellus, eget fermentum nibh. Sed eget suscipit libero, et mollis diam. Maecenas elementum vestibulum nulla, sit amet hendrerit mi molestie finibus.
 
@@ -68,10 +77,11 @@
                 Donec lectus nulla, faucibus in convallis consectetur, fringilla vitae purus. Nulla ac aliquam est. Aenean mauris felis, feugiat at posuere et, feugiat nec tortor. Vestibulum nec turpis magna. Cras ac arcu mauris. Pellentesque et finibus lorem, at dapibus sapien. Curabitur sit amet ex sapien. In tempus dolor non lacinia vehicula. Donec nec arcu facilisis, consectetur nisl et, placerat orci. Morbi rhoncus neque nibh, id mattis orci fringilla et. Sed fringilla, elit et commodo tincidunt, tortor velit ultrices est, nec condimentum risus ex vitae lacus. Duis porta mi sit amet odio suscipit, sit amet pulvinar felis convallis.</p>
                 
                 <p> (End of Beef section) <a href="#top">Back to top</a></p>
-
+                </div>
         	</div>
 
-        	<div id="Sushi" class="col-md-4 col-sm-12 col-xs-12">
+        	<div id="Sushi" class="col-md-4 col-sm-12 col-12">
+                <div class="item">
         		<h3 class="text-center">Sushi</h3>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales, ante vel porttitor efficitur, lectus turpis suscipit neque, id lacinia mi ex at nibh. Sed ut iaculis velit. Sed a dignissim est. In in orci et velit ullamcorper congue. Sed justo felis, ultricies eget pulvinar ac, vulputate id sapien. Aliquam sagittis feugiat nibh et auctor. Vestibulum sit amet nisi ultrices, feugiat nunc ac, sollicitudin ligula. Maecenas venenatis massa et risus condimentum tincidunt. Suspendisse eleifend nibh sapien, sit amet tempor ipsum elementum eu. Sed volutpat est facilisis, aliquet ipsum non, eleifend arcu. Mauris mauris nisi, pellentesque eget nibh et, ornare ultricies odio. Sed velit ligula, blandit eu nisi sit amet, venenatis faucibus orci. Mauris tortor est, volutpat sit amet placerat sed, mattis molestie ipsum. Donec dictum consequat tellus, eget fermentum nibh. Sed eget suscipit libero, et mollis diam. Maecenas elementum vestibulum nulla, sit amet hendrerit mi molestie finibus.
 
@@ -84,7 +94,7 @@
                 Donec lectus nulla, faucibus in convallis consectetur, fringilla vitae purus. Nulla ac aliquam est. Aenean mauris felis, feugiat at posuere et, feugiat nec tortor. Vestibulum nec turpis magna. Cras ac arcu mauris. Pellentesque et finibus lorem, at dapibus sapien. Curabitur sit amet ex sapien. In tempus dolor non lacinia vehicula. Donec nec arcu facilisis, consectetur nisl et, placerat orci. Morbi rhoncus neque nibh, id mattis orci fringilla et. Sed fringilla, elit et commodo tincidunt, tortor velit ultrices est, nec condimentum risus ex vitae lacus. Duis porta mi sit amet odio suscipit, sit amet pulvinar felis convallis.</p>
                 
                 <p> (End of Sushi section) <a href="#top">Back to top</a></p>
-
+                </div>
         	</div>
 			
 		</div>
