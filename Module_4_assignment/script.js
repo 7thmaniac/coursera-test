@@ -34,7 +34,7 @@ WARNING!!! WARNING!!!
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 
-(function(){
+(function(window){
 
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
@@ -43,7 +43,7 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // using either the helloSpeaker's or byeSpeaker's 'speak' method.
 // See Lecture 50, part 1
  for (var name in names) {
-        var firstLetter = name.charAt(0).toLowerCase();
+        var firstLetter = names[name].charAt(0).toLowerCase();
         if (firstLetter === 'j') {
             byeSpeaker.speak(names[name]);
         } else {
@@ -51,4 +51,4 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
         }
     }
 
-}) ();
+}) (window);
